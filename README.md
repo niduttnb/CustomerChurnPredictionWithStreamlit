@@ -1,4 +1,4 @@
-# CustomerChurnPredictionWithStreamlit
+# Customer Churn Prediction With Streamlit
 IBM Customer Churn Prediction with Streamlit
 
 Step 1: <br/>
