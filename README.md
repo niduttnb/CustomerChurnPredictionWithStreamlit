@@ -1,7 +1,7 @@
 # CustomerChurnPredictionWithStreamlit
 IBM Customer Churn Prediction with Streamlit
 
-Step 1:
+Step 1: <br/>
 conda create -n churn python=3.7 <br/>
 conda activate churn <br/>
 pip install requirement.txt <br/>
