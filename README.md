@@ -14,7 +14,7 @@ streamlit run modelHost.py
 
 Step 4: <br/>
 Select the kind of input you want to your mode! <br/>
-[Screenshot (9013)](https://user-images.githubusercontent.com/14346621/145688575-11bf9a1f-9452-46db-a824-258508e618f1.png) <br/>
+![Screenshot (9013)](https://user-images.githubusercontent.com/14346621/145688575-11bf9a1f-9452-46db-a824-258508e618f1.png) <br/>
 l i.e SMOTE, SCALIMG , PCA etc <br/>
 <br/>
 
