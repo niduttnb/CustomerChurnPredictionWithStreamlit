@@ -127,7 +127,7 @@ cat_columns = [cname for cname in df_model.columns if df_model[cname].dtype == "
 # OneHotEncode the categorical variables
 encoder = OneHotEncoder(sparse=False)
 train_X_encoded = pd.DataFrame(encoder.fit_transform(df_model[cat_columns]))
-train_X_encoded.columns = encoder.get_feature_names(cat_columns)
+train_X_encoded.columns = encoder.get_feature_names_out(cat_columns)
 df_model.drop(cat_columns, axis=1, inplace=True)
 df_model2 = pd.concat([df_model, train_X_encoded], axis=1)
 df_model2[targetVariableName] = y_ols

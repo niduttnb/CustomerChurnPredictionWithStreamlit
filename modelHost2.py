@@ -122,7 +122,7 @@ def predict_new(model_name, model, X_train, y_train, X_test, y_test):
 			encoder = pickle.load(pickle_file)
 		cat_columns = [cname for cname in df_model.columns if df_model[cname].dtype == "object"]
 		train_X_encoded = pd.DataFrame(encoder.fit_transform(df_model[cat_columns]))
-		train_X_encoded.columns = encoder.get_feature_names(cat_columns)
+		train_X_encoded.columns = encoder.get_feature_names_out(cat_columns)
 
 		df_model.drop(cat_columns ,axis=1, inplace=True)
 
@@ -261,7 +261,7 @@ def run(X_train,y_train, X_test, y_test,d):
 
 				else:
 					c = st.slider('What value of c will you use?', min_value = 0.001, max_value=10.0,step=0.1)
-					st.write('liblinear tries for l1,l2 and sage tries for ElasticNet, l1,l2,none')
+					st.write('liblinear tries for l1,l2 and saga tries for ElasticNet, l1,l2,none')
 					solver = st.selectbox(
 				 'What type of solver do you want to use?',
 			     ['liblinear','saga'])
